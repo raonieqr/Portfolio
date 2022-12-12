@@ -87,17 +87,37 @@ body{
 }
 
 .card-image img{
-    object-fit: cover;
+    object-fit:contain;
+    background-color: rgb(22, 22, 22);
+
+}
+
+.card p.title{
+    color: #485fc7;
+}
+
+.card p.title:hover{
+    color: #7283d1;
 }
 
 #projects-more{
     margin-top: 10px;
     font-weight: 700;
-    background-color: #002fff50;
-    color: #ffffff;
+    background-color: #485fc7;
+}
+
+#projects-more a{
+    color: white;
 }
 
 #projects-more:hover{
-    background-color: #3d3d3d;
-    color: #ffffff;
+    background-color: #3b3b3b;
+    transition: background 0.3s ease-out;
+}
+
+
+#projects-more .transf:hover{
+    margin-left: 5px;
+    transform: translateX(0);
+    transition: transform 0.5s ease-out;
 }
